@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="corapp">
+  
+  <ion-back-button slot="start" defaultHref="home" color="dark"></ion-back-button>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+        <span>&nbsp;</span>
+      </ion-button>
+      <ion-button class="car" [routerLink]="['/carrinho']">
+        <ion-icon name="cart-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button class="car" [routerLink]="['/login/1']">
+        <ion-icon name="person-outline"></ion-icon>  
+      </ion-button>  
+    </ion-buttons>
+    <ion-title class="font1" slot="start" color="dark">ILOOK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="back-ground" >
+  <ion-card class="card">
+    <ion-item>
+      <ion-label position="floating" color ="danger" class="font2">Email</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color ="danger" class="font2">Senha</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-button class="font2" expand="block" color="danger" [routerLink]="['/']" >Entrar</ion-button>
+    <br> 
+  </ion-card>
+  <ion-card class="card">
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <a class="font2" expand="block" color="danger" (click)="irCadastro()"  >Fazer cadastro</a>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  
+</ion-content>
+
+<!-- [routerLink]="['/form/1']" -->
+
+
+
+<ion-footer>
+  <ion-toolbar color="corapp">
+    <ion-buttons>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/']">
+                <ion-icon name="home-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/contato']">
+                <ion-icon name="chatbubble-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/sobre']">
+                <ion-icon name="information-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button>
+                <ion-icon name="log-out-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-footer>

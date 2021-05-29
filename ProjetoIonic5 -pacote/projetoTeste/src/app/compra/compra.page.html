@@ -1,0 +1,92 @@
+<ion-header>
+  
+  <ion-toolbar color="corapp">
+    <ion-back-button slot="start" defaultHref="home" color="dark"></ion-back-button>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+        <span>&nbsp;</span>
+      </ion-button>
+      <ion-button class="car" [routerLink]="['/carrinho']">
+        <ion-icon name="cart-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button class="car" [routerLink]="['/login/1']">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="font1" slot="start" color="dark">ILOOK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label>Forma de pagamento:</ion-label>
+      <ion-select>
+        <ion-select-option value="cartaoDebito">Cartão de Débito</ion-select-option>
+        <ion-select-option value="cartaoCredito">Cartão de Crédito</ion-select-option>
+        <ion-select-option value="boleto">Boleto</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked" color="danger" class="font2">Endereço de entrega</ion-label>
+        <ion-input placeholder="CEP" type="number"></ion-input>
+        <ion-input placeholder="Rua"></ion-input>
+        <ion-input placeholder="Numero" type="number"></ion-input>
+        <ion-input placeholder="Cidade"></ion-input>
+        <ion-textarea placeholder="Complemento"></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+    <ion-button expand="block" color="danger">Comprar</ion-button>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="corapp">
+    <ion-buttons>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/']">
+                <ion-icon name="home-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/contato']">
+                <ion-icon name="chatbubble-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/sobre']">
+                <ion-icon name="information-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button>
+                <ion-icon name="log-out-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-footer>

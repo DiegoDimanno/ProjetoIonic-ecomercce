@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar color="corapp">
+  
+  <ion-back-button slot="start" defaultHref="home" color="dark"></ion-back-button>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+        <span>&nbsp;</span>
+      </ion-button>
+      <ion-button class="car" [routerLink]="['/carrinho']">
+        <ion-icon name="cart-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button class="car" [routerLink]="['/login/1']">
+        <ion-icon name="person-outline"></ion-icon>  
+      </ion-button>  
+    </ion-buttons>
+    <ion-title class="font1" slot="start" color="dark">ILOOK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <!--ion-item class="font1">ILOOK</-ion-item--->
+  
+  <ion-card class="font2">
+
+  O ilook possui um diferenciado mix de produtos nos setores de perfumaria. Com política de vendas firmemente atreladas aos valores da ética e da responsabilidade junto aos seus clientes e amigos, a empresa oferece atendimento diferenciado, através de uma equipe preparada, preço justo e completa infraestrutura. Sempre atento às tendências do mercado, o Ilook tornou-se referência no que diz respeito à qualidade e beleza.
+  A empresa possui um vasto catálogo de produtos, trabalhando com marcas de renome mundial e com garantia de procedência. Oferecemos produtos completamente originais, diretamente das empresas distribuidoras das grandes marcas no Brasil e do mundo. Investimos em um atendimento especializado e de qualidade, para que a sua compra seja realizada da maneira segura, e a sua experiência conosco seja a melhor possível.
+</ion-card>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="corapp">
+    <ion-buttons>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/']">
+                <ion-icon name="home-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/contato']">
+                <ion-icon name="chatbubble-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button [routerLink]="['/sobre']">
+                <ion-icon name="information-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button>
+                <ion-icon name="log-out-outline" color="dark"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-footer>
+
+
+
+
+   
+    
